@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+</head>
+<body>
+<h1>New movie</h1>
+<form method="post" th:object="${newMovie}">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" th:field="*{name}">
+    </div>
+    <div>
+        <label for="director">Director</label>
+        <input id="director" th:field="*{director}">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
